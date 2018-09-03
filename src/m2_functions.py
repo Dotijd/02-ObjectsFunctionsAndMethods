@@ -3,12 +3,12 @@ Practice DEFINING and CALLING
      FUNCTIONS
 
 Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Jimmy Doti.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 #
-# TODO: 2.
+# done: 2.
 #   Allow this module to use the  rosegraphics.py  module by marking the
 #     src
 #   folder in this project as a "Sources Root", as follows:
@@ -26,11 +26,15 @@ def main():
     TESTS the functions that you will write below.
     You write the tests per the _TODO_s below.
     """
+    answer = triangle(3,4)
+    print(answer)
 
+    turtles("blue"  ,10)
+    turtles("red"    ,1)
 
 ###############################################################################
 #
-# TODO: 3a.  Define a function immediately blow this _TODO_.
+# Done: 3a.  Define a function immediately blow this _TODO_.
 #   It takes two arguments that denote, for a right triangle,
 #   the lengths of the two sides adjacent to its right angle,
 #   and it returns the length of the hypotenuse of that triangle.
@@ -42,6 +46,13 @@ def main():
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
+import math
+
+def triangle(a,b):
+    return  math.sqrt((a**2) + (b**2))
+
+
+
 
 
 ###############################################################################
@@ -72,6 +83,22 @@ def main():
 #   for the arguments) to test whether you defined the function correctly.
 #
 ###############################################################################
+def turtles(color,thickness):
+    window = rg.TurtleWindow()
+    boris = rg.SimpleTurtle()
+    boris.pen = rg.Pen("green",thickness)
+    boris.forward(100)
+    sue=rg.SimpleTurtle()
+    sue.pen = rg.Pen (color, 10)
+    sue.backward(100)
+
+
+
+
+
+
+    window.close_on_mouse_click()
+
 
 
 ###############################################################################
