@@ -16,7 +16,7 @@
 #
 # Methods and functions are DIFFERENT in that:
 #
-#   1. METHODs are associated with instances of CLASSES,
+#   1. METHODS are associated with instances of CLASSES,
 #        but FUNCTIONS have no such association.
 #
 #   2. The notation for calling a FUNCTION is:

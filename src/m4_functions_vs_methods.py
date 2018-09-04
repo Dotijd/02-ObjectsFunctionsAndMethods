@@ -9,7 +9,7 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 
 ###############################################################################
 #
-# TODO: 2.
+# Done: 2.
 #   With your instructor, READ the file   methods_vs_functions.txt
 #   in this project, ASKING QUESTIONS as needed to understand its contents.
 #   After you have done so, mark this _TODO_ as DONE
@@ -141,7 +141,12 @@ def try_methods():
     # TODO: 3. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     ###########################################################################
-
+    john = rg.SimpleTurtle()
+    john.pen = rg.Pen('brown', 5)
+    john.forward(150)
+    john.left(90)
+    john.forward(50)
+    john.backward(100)
 
 def try_functions():
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
@@ -161,8 +166,11 @@ def try_functions():
     #    HINT: see   jump_and_move_turtle   above.
     ###########################################################################
 
-
+    jump_and_move_turtle(-50, 50, 100, 100)
+    jump_and_move_turtle(200, 100, 300, 30)
+    jump_and_move_turtle(100, 200, 0, 0)
 def try_methods_and_functions():
+
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
     """
     Constructs a SimpleTurtle and sets its   pen  to a new rg.Pen
@@ -203,10 +211,26 @@ def try_methods_and_functions():
     #     draw_many_squares
     #   function defined above.  If you don't see why, ** ASK FOR HELP. **
     ###########################################################################
+    moose = rg.SimpleTurtle()
 
-
+    moose.Pen = rg.Pen('blue', 5)
+    moose.backward(150)
+    moose.speed = 1
+    draw_many_squares(moose, 2, 100, 30,)
+    moose.speed = 1
+    moose.Pen = rg.Pen('red', 5)
+    draw_many_squares(moose, 10, 50, 15)
+    moose.speed = 100
+    moose.Pen = rg.Pen('red', 35)
+    draw_many_squares(moose, 8, 300, 60)
+    moose.Pen = rg.Pen('black', 3)
+    moose.backward(200)
+    moose.draw_circle(30)
+    moose.draw_square(50)
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # -----------------------------------------------------------------------------
 
 main()
+
+
